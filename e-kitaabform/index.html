@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Author Registration Form</title>
+    <style>
+      body {
+        font-family: Calibri, sans-serif;
+      }
+      body {
+        background: url('booksppic.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow: hidden;
+      }
+      h2 {
+        color: #232729;
+        text-align: center; /* Center align the title */
+      }
+      form {
+        background-color: #e9c787;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #333333;
+      }
+      input[type='text'],
+      input[type='email'],
+      input[type='tel'],
+      input[type='file'] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        background-color: #ffffff; /* Set background color to white */
+      }
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+      }
+      input[type='submit'] {
+        background-color: #ae7f27;
+        color: #ffffff;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type='submit']:hover {
+        background-color: #ae7f27;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Author Registration Form</h2>
+    <form action="/apply" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+      <label for="resume">E-Kitaab (PDF or Word):</label>
+      <input
+        type="file"
+        id="resume"
+        name="resume"
+        accept=".pdf,.doc,.docx"
+        required
+      />
+
+      <input type="submit" value="Submit Application" />
+    </form>
+  </body>
+</html>
